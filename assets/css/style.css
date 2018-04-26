@@ -1,0 +1,96 @@
+a,
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    font-size: 2rem;
+    margin: 1rem;
+}
+h2{
+    margin-bottom: 2rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background: silver;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7{
+    text-transform: uppercase;
+}
+
+h1{
+    color: white;
+    letter-spacing: .8rem;
+}
+
+.scoreboard{
+    display: flex;
+    justify-content: space-around;
+    background: rgba(0,0,0,.8);
+    padding: .5rem;
+}
+.wins,
+.losses{
+    background: rgba(0,0,0, .6);
+    border: solid 2px black;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wins span,
+.losses span,
+.label{
+    min-width: 4rem;
+    display: block;
+}
+
+.hangman-wrap{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: rgba(0,0,0,.1);
+}
+
+.img-wrap{
+    height: 25vw;
+    width: 60vw;
+}
+.hangman-wrap img{
+    width: 100%;
+    height: auto;
+}
+
+.hidden-word{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 3rem;
+    padding: .5rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    background: rgba(0,0,0,.8);
+    color: white;
+}
+
+.guessed-letters{
+    background: black;
+}
+
+
+
