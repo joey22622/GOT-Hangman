@@ -1,24 +1,30 @@
+
+body{
+    background-image: url(../images/wall.png);
+}
+
 a,
 a:visited{
     text-decoration: none;
     color: black;
-}
-
-h1{
-    font-size: 2rem;
-    margin: 1rem;
-}
-h2{
-    margin-bottom: 2rem;
+    
 }
 
 .content{
     display: flex;
+    justify-content: center;
+    background: rgba(0,0,0,.8);
+
+}
+
+.inner-content{
+    display: flex;
     flex-direction: column;
-    width: 100%;
+    padding: 1rem;
     height: 100%;
     align-items: center;
-    background: silver;
+    background: rgba(0,0,0,.6);
+    border: solid black 6px;
 
 }
 
@@ -33,13 +39,28 @@ h7{
 }
 
 h1{
+    font-size: 2rem;
     color: white;
-    letter-spacing: .8rem;
+    letter-spacing: 1.2rem;
+    margin-left: 2rem;
+}
+
+h2{
+    margin: 1rem 0; 
+    color: rgba(255,255,255,.7);
+    letter-spacing: .3rem;
+    font-size: 1.2rem;
+    background: black;
+    display: block;
+    padding: .5em 0;
+    width: 100%;
+    text-align: center;
+    
 }
 
 .scoreboard{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background: rgba(0,0,0,.8);
     padding: .5rem;
 }
@@ -47,25 +68,53 @@ h1{
 .losses{
     background: rgba(0,0,0, .6);
     border: solid 2px black;
-    color: white;
-    padding: 1rem 2rem;
+    color: silver;
+    font-size: 1.2rem;
+    padding: 1rem 0;
     display: flex;
     justify-content: space-between;
 }
 
 .wins span,
-.losses span,
-.label{
+.losses span{
     min-width: 4rem;
     display: block;
+    transition: 1s;
+    text-align: center;
 }
+
+.wins span,
+.losses span {
+    border-left: solid 1px silver;
+    border-right: solid 1px silver;
+}
+.label{
+    display: block;
+    padding: 0 2rem;
+}
+
 
 .hangman-wrap{
     display: flex;
     flex-direction: column;
     overflow: hidden;
     background: rgba(0,0,0,.1);
+    position: relative;
 }
+
+.lives{
+    position: absolute;
+    color: rgba(255,255,255,1);
+    right: 0;
+    padding: 1rem;
+    font-size: 2rem;
+    background: rgba(0,0,0,.7);
+    border: solid 3px black;
+    transition: 1s;
+    opacity: 0;
+
+}
+
 
 .img-wrap{
     height: 25vw;
@@ -76,20 +125,55 @@ h1{
     height: auto;
 }
 
-.hidden-word{
+.messages{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 3rem;
-    padding: .5rem;
     text-transform: uppercase;
-    letter-spacing: .3rem;
     background: rgba(0,0,0,.8);
+    border: solid 3px black;
     color: white;
+    transition: 1s;
 }
+
+.message,
+.start{
+    font-size: .9rem;
+    margin: 1rem;
+    text-align: center;
+    letter-spacing: .1rem;
+    line-height: 1.3rem;
+    transition: 1s;
+    opacity: 1;
+}
+
+.in-progress{
+    opacity: 0;
+}
+
+
+
+.hidden-word{
+    letter-spacing: 2rem;
+    font-size: 1.6rem;
+    margin-left: 1em;
+    padding: 0rem;
+    transition: 1s;
+}
+
+
 
 .guessed-letters{
     background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    letter-spacing: 2rem;
+    margin-left: 2rem;
+    transition: 1s;
+
 }
 
 

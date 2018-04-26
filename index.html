@@ -4,41 +4,46 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="assets/css/reset.css" rel="stylesheet" type="text/css">
         <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="assets/javascript/game.js"></script>
     </head>
     <body>
         <div class="content">
-            <h1>Hangman</h1>
-            <h2>Winter is coming</h2>
-            <section>
+            <div class="inner-content">
+                <h1>Hangman</h1>
+                <h2>Winter is coming</h2>
+                <section>
 
-                <div class = "scoreboard">
-                    <div class ="wins">
-                        <h3 class="label">Wins</h3>
-                        <span>
+                    <div class = "scoreboard">
+                        <div class ="wins">
+                            <h3 class="label">Wins</h3>
+                            <span>
 
-                        </span>
+                            </span>
+                        </div>
+                    <div class ="losses">
+                            <span>
+
+                            </span>
+                            <h3 class="label">Losses</h3>   
                     </div>
-                <div class ="losses">
-                        <h3 class="label">Losses</h3>
-                        <span>
-
-                        </span>
-                </div>
-                </div>
-                <div class = "hangman-wrap">
-                <div class="img-wrap">
-                    <img src="assets/images/6_lives-0.jpg"/>
-                </div>
-                    <div class = "hidden-word">
-                        Press any key to play
                     </div>
-                </div>
-                <div class ="guessed-letters">
-                    <h3>Letters Guessed</h3>
-                    <p></p>
-                </div>
-            </section>
+                    <div class = "hangman-wrap">
+                        <div class="lives"></div>
+                    <div class="img-wrap">
+                        <img src="assets/images/5_lives.jpg"/>
+                    </div>
+                        <div class = "messages">
+                            <span class="hidden-word collapsed"></span>
+                            <span class="message">When you play the game of thrones, you win or you die.</span>
+                            <span class="start">— Press any key to play –</span>
+                        </div>
+                    </div>
+                    <div class ="guessed-letters">
+                        <p></p>
+                    </div>
+                </section>
+            </div>
         </div>
     </body>
 </html>
