@@ -98,7 +98,7 @@ document.onkeypress = function(event){
         $(".lives").css("opacity", "1");
         $(".lives, .hidden-word, .message").css("color" , "rgba(255," + lives*55 + "," + lives*55 + ",1" );
         $(".guessed-letters").empty();
-        document.querySelector(".img-wrap img").setAttribute("src" , "Assets/images/" + lives + "_lives.jpg")
+        document.querySelector(".img-wrap img").setAttribute("src" , "assets/images/" + lives + "_lives.jpg")
 
         var charCount = guessWord.length;
         for(var i = 1; i < charCount; i++){
@@ -116,7 +116,7 @@ document.onkeypress = function(event){
     } else {   
         var guess = event.key.toUpperCase();
         var charGuessed = false;
-        
+
         // for(var k = 0; k < alphaNumeric.length; k++){
         //     console.log(alphaNumeric[k]);
         //     if(alphaNumeric[k] !== guess){
@@ -159,7 +159,7 @@ document.onkeypress = function(event){
                 incorrect.push(guess);
                 misses = incorrect.length;
                 lives = lives - 1
-                document.querySelector(".img-wrap img").setAttribute("src" , "Assets/images/" + lives + "_lives.jpg")
+                document.querySelector(".img-wrap img").setAttribute("src" , "assets/images/" + lives + "_lives.jpg")
                 $(".lives").text(lives);
                 $(".lives, .hidden-word, .message").css("color" , "rgba(255," + lives*55 + "," + lives*55 + ",1" );
             }
