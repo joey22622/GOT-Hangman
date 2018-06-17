@@ -1,6 +1,6 @@
 # Word-Guess-Game
 
-**DESCRIPTION:** Hangman-style game that takes on a Game of Thrones Theme
+**DESCRIPTION:** Hangman-style game that takes on a Game of Thrones theme
 
 **GAMEPLAY**
 
