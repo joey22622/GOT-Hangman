@@ -1,6 +1,10 @@
-# Word-Guess-Game
+# Game of Thrones Hangman
 
 **DESCRIPTION:** Hangman-style game that takes on a Game of Thrones theme
+
+
+![App Tutorial](GOT-Hangman.gif)
+
 
 **GAMEPLAY**
 
@@ -13,13 +17,17 @@
 
 **PROGRAMMING / FUNCTIONALITY**
 
-* App is built with *HTML*, *CSS* and basic *JavaScript*
+* App is built using the following languages/libraries:
+  - *HTML* 
+  - *CSS* 
+  - *JavaScript*
 * Message display will tease the user with randomly chosen quotes from G.O.T. depending on there performance of each round
 * Certain text colors will progressively be shifted to a *redder* hue for each incorrect guess.
 * With each incorrect guess,  The display image will change to one that places Sean Bean's character, Eddard Stark slightly closer to execution - until the always inevitable downfall of Sean Bean
 
 **FILE PATH**
 
+```
 Word-Guess-Game
 ├── README.md
 ├── assets
@@ -46,3 +54,5 @@ Word-Guess-Game
 │   └── javascript
 │       └── game.js
 └── index.html
+
+```
